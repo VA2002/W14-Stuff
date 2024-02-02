@@ -78,8 +78,10 @@ app.delete('/collection/:collectionName/:id', (req, res, next) => {
     )
 })
 
-app.listen(8000, () => {
-  console.log("Port 8000");
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log("Port 3000");
 });
 
 // var express = require("express");
